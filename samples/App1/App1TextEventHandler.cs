@@ -8,9 +8,9 @@ using Volo.Abp.EventBus.Distributed;
 namespace App1
 {
     /// <summary>
-    /// Used to listen messages sent to App2 by App1.
+    /// Used to listen messages sent to App2 or App3 by App1.
     /// </summary>
-    public class App1TextEventHandler : IDistributedEventHandler<App2ToApp1TextEventData>, ITransientDependency
+    public class App1TextEventHandler : IDistributedEventHandler<App2ToApp1TextEventData>, IDistributedEventHandler<App3ToApp1TextEventData>, ITransientDependency
     {
         private readonly IDistributedEventBus _distributedEventBus;
         private readonly ILogger _logger;
@@ -28,7 +28,16 @@ namespace App1
             _logger.LogInformation(eventData.TextMessage);
             _logger.LogInformation("**********************************************************************");
 
-           await _distributedEventBus.PublishAsync(new App1TextReceivedEventData(eventData.TextMessage));
+            await _distributedEventBus.PublishAsync(new App1TextReceivedEventData(eventData.TextMessage));
+        }
+
+        public async Task HandleEventAsync(App3ToApp1TextEventData eventData)
+        {
+            _logger.LogInformation("************************ INCOMING MESSAGE ****************************");
+            _logger.LogInformation(eventData.TextMessage);
+            _logger.LogInformation("**********************************************************************");
+
+            await _distributedEventBus.PublishAsync(new App1TextReceivedEventData(eventData.TextMessage));
         }
     }
 }

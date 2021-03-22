@@ -1,4 +1,5 @@
 ﻿using EasyAbp.Abp.EventBus.Dapr;
+using EasyAbp.Abp.EventBus.Dapr.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,7 +15,7 @@ using Volo.Abp.Modularity;
 namespace App1
 {
     [DependsOn(
-        typeof(AbpDaprEventBusModule),
+        typeof(AbpDaprEventBusAspNetCoreModule),
         typeof(AbpAutofacModule),
         typeof(AbpAspNetCoreMvcModule),
         typeof(AbpAspNetCoreSerilogModule))]
