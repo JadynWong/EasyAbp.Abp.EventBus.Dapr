@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyAbp.Abp.EventBus.Dapr", "src\EasyAbp.Abp.EventBus.Dapr\EasyAbp.Abp.EventBus.Dapr.csproj", "{DC30ADD8-F088-4BF3-B8F2-5FC5EC44EEA6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.EventBus.Dapr.Pub", "src\EasyAbp.Abp.EventBus.Dapr.Pub\EasyAbp.Abp.EventBus.Dapr.Pub.csproj", "{78F11077-6662-454D-94F6-917ED00D0C86}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0BC3D131-E7E7-446C-8BA0-AE01B79F0770}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{8C56E090-FC16-4D61-90AD-B4D9D719EABA}"
@@ -17,8 +19,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App1", "samples\App1\App1.csproj", "{ADBF05B4-CD3B-4D8C-A20B-07282490D03C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App2", "samples\App2\App2.csproj", "{D9E22F7D-E2E7-47F3-9EEF-58C9DCC1ABAB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.EventBus.Dapr.AspNetCore", "src\EasyAbp.Abp.EventBus.Dapr.AspNetCore\EasyAbp.Abp.EventBus.Dapr.AspNetCore.csproj", "{78F11077-6662-454D-94F6-917ED00D0C86}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App3", "samples\App3\App3.csproj", "{31C3723E-64A7-4C11-B837-EEE011376391}"
 EndProject

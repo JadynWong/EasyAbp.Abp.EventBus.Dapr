@@ -9,7 +9,7 @@ namespace App3
 
     [DependsOn(
         typeof(AbpAutofacModule),
-        typeof(AbpDaprEventBusModule)
+        typeof(AbpDaprEventBusPubModule)
     )]
     public class App3Module : AbpModule
     {

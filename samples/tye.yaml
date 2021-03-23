@@ -31,6 +31,8 @@ services:
   - port: 5050
 - name: App2
   project: App2/App2.csproj
+- name: App3
+  project: App3/App3.csproj
 - name: redis
   external: true
   bindings: 

@@ -8,12 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Volo.Abp.AspNetCore" Version="$(AbpVersion)" />
-    <PackageReference Include="Dapr.AspNetCore" Version="$(DaprVersion)" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\EasyAbp.Abp.EventBus.Dapr\EasyAbp.Abp.EventBus.Dapr.csproj" />
+    <PackageReference Include="Volo.Abp.Core" Version="$(AbpVersion)" />
+    <PackageReference Include="Volo.Abp.EventBus" Version="$(AbpVersion)" />
+    <PackageReference Include="Dapr.Client" Version="$(DaprVersion)" />
   </ItemGroup>
 
   <ItemGroup>

@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\EasyAbp.Abp.EventBus.Dapr.AspNetCore\EasyAbp.Abp.EventBus.Dapr.AspNetCore.csproj" />
+    <ProjectReference Include="..\..\src\EasyAbp.Abp.EventBus.Dapr\EasyAbp.Abp.EventBus.Dapr.csproj" />
     <ProjectReference Include="..\SharedModule\SharedModule.csproj" />
   </ItemGroup>
 
